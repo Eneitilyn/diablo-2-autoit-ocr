@@ -28,8 +28,8 @@ Sleep(1000)
 ;  White    = 12895428
 ;  Blue     = 5263532
 
-Local $TimerStart, $TimerDiff
-$TimerStart = TimerStart()
+Local $TimerInit, $TimerDiff
+$TimerInit = TimerInit()
 
 
 $Pixel = 12895428
@@ -96,7 +96,7 @@ Next
 
 FileClose($File)
 
-$TimerDiff = TimerDiff ($TimerStart)
+$TimerDiff = TimerDiff ($TimerInit)
 MsgBox("", "", $TimerDiff)
 
    ;===========================================================================
